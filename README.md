@@ -24,31 +24,11 @@ The source files use ES module syntax (`import` / `export default`).
 
 `npm run demo`
 
-## The problem
-
-The chessboard is treated as a graph: every square is a vertex, written as a pair
-of coordinates `[x, y]` where both numbers are between 0 and 7, and every legal
-knight move is an edge between two vertices. The graph is never built explicitly.
-Instead the search starts on the starting square and explores the moves as it
-goes.
-
-A knight jumps two squares in one direction and one square in the other, so from
-`[0, 0]` it can reach `[1, 2]` and `[2, 1]`. Moves that would leave the board are
-never allowed.
 
 ## API
 
 `knightMoves(start, end)`
 
-Both arguments are squares. The function runs a breadth-first search, so the
-first time it reaches the ending square it is already on one of the shortest
-paths, prints the trip and returns the squares the knight stops on, starting
-square first.
-
-Breadth-first search is the right fit here because every move costs the same: it
-finds the shortest path instead of merely a valid one, and the visited squares
-keep it out of the endless cycles a depth-first search would have to guard
-against by hand.
 
 ```js
 knightMoves([0, 0], [1, 2]);
@@ -71,7 +51,7 @@ You made it in 3 moves! Here's your path:
 `[[0,0],[1,2],[3,3]]`. Every square on the board can be reached from every other
 square within six moves.
 
-`formatKnightMoves(path)` is a named export that turns a path into the printed
+`formatKnightMoves(path)` named export that turns a path into the printed
 text, which keeps the message testable without a console:
 
 ```js
