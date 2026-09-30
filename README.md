@@ -59,10 +59,6 @@ formatKnightMoves([[4, 4]]);
 
 ```
 
-A square that is not a pair of coordinates, holds something other than whole
-numbers, or falls outside the board throws a `TypeError` before anything is
-printed.
-
 `knightMoves` returns the path as an array of squares and also `console.log`s it,
 so the demo reads like the lesson transcript while the returned value stays easy
 to assert in the tests.
