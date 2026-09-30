@@ -1,0 +1,39 @@
+{
+  "name": "project-binary-search-trees-the-odin-project",
+  "version": "1.0.0",
+  "description": "Balanced binary search tree practice from The Odin Project: a Tree class that builds a sorted, duplicate-free tree out of an array and supports insertion, deletion, breadth-first and depth-first traversal, height, depth, balance checks and rebalancing.",
+  "main": "src/modules/tree.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "demo": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w3nc/Project-Binary-Search-Trees-The-Odin-Project.git"
+  },
+  "keywords": [
+    "binary-search-tree",
+    "tree-traversal",
+    "data-structures",
+    "the-odin-project"
+  ],
+  "bugs": {
+    "url": "https://github.com/w3nc/Project-Binary-Search-Trees-The-Odin-Project/issues"
+  },
+  "homepage": "https://github.com/w3nc/Project-Binary-Search-Trees-The-Odin-Project#readme",
+  "devDependencies": {
+    "@babel/core": "^8.0.6",
+    "@babel/preset-env": "^8.0.6",
+    "@eslint/js": "^10.0.1",
+    "babel-jest": "^30.5.2",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "jest": "^30.5.2",
+    "prettier": "3.9.8"
+  }
+}
